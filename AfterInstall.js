@@ -31,7 +31,7 @@ function linemanPath(replacement, source){
 		return source.replace(pattern, replacement);
 };
 
-this.WshShell.Run("regsvr32 " + InstallationPath + "JScriptInclude.wsc",  0, false);
+this.WshShell.Run("regsvr32 /s " + InstallationPath + "JScriptInclude.wsc",  1, false);
 
 
 WScript.Echo(
