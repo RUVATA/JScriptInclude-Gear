@@ -31,6 +31,9 @@ function linemanPath(replacement, source){
 		return source.replace(pattern, replacement);
 };
 
+this.WshShell.Run("regsvr32 " + InstallationPath + "JScriptInclude.wsc",  0, false);
+
+
 WScript.Echo(
   "[ENG]\nInstallation of JScriptInclude Gear completed successfully.\n\n[RUS]\n" 
 + "Установка JScriptInclude Gear произведена успешно.");
@@ -40,11 +43,11 @@ WScript.Echo(
 + "Сейчас Вам будет предложен просмотр Документации:\n\n"
 + InstallationPath + "Help.html");
 
-this.WshShell.Run(InstallationPath + "Help.html",  0, true)
+this.WshShell.Run(InstallationPath + "Help.html",  0, false)
 
 WScript.Echo(
   "[ENG]\nAnd also run example of using:\n\n[RUS]\n" 
 + "А так же ознакомится с примером использования:\n\n"
 + InstallationPath + "example\\TestDir\\JScriptExample.jsl");
 
-this.WshShell.Run('explorer.exe /select,"' + InstallationPath + 'example\\TestDir\\JScriptExample.js"',  1, true)
+this.WshShell.Run('explorer.exe /select,"' + InstallationPath + 'example\\TestDir\\JScriptExample.js"',  1, false)
