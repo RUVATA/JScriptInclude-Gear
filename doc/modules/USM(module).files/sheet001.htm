@@ -1,0 +1,1292 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 14">
+<link id=Main-File rel=Main-File href="../USM(module).htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:" ";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../USM(module).htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link=blue vlink=purple>
+
+<table border=0 cellpadding=0 cellspacing=0 width=982 style='border-collapse:
+ collapse;table-layout:fixed;width:737pt'>
+ <col width=69 style='mso-width-source:userset;mso-width-alt:2523;width:52pt'>
+ <col width=64 span=3 style='width:48pt'>
+ <col width=66 style='mso-width-source:userset;mso-width-alt:2413;width:50pt'>
+ <col width=79 style='mso-width-source:userset;mso-width-alt:2889;width:59pt'>
+ <col width=64 span=9 style='width:48pt'>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td colspan=5 rowspan=2 height=41 class=xl143 width=327 style='border-bottom:
+  1.5pt solid #0070C0;height:30.75pt;width:246pt'><a name="RANGE!A1">JScriptInclude(USM)</a></td>
+  <td class=xl65 width=79 style='width:59pt'></td>
+  <td colspan=6 rowspan=8 class=xl145 width=384 style='width:288pt'>Модуль
+  предоставляющий универсальные, частоиспользуемые методы, а так же служебные
+  функции и утилиты.<br>
+    <br>
+    <font class="font8">ОГРАНИЧЕННОСТЬ В ФУНКЦИОНАЛЬНОСТИ<br>
+    МОДУЛЬ ЕЩЕ НАХОДИТСЯ В РАЗРАБОТКЕ</font></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl65 style='height:15.75pt'></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=36 style='height:27.0pt'>
+  <td height=36 style='height:27.0pt'></td>
+  <td colspan=3 class=xl146>MODULE</td>
+  <td></td>
+  <td class=xl65></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 colspan=2 style='height:24.0pt;mso-ignore:colspan'></td>
+  <td class=xl66>Global Object</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl65></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 colspan=6 style='height:15.75pt;mso-ignore:colspan'></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=25 style='mso-height-source:userset;height:18.75pt'>
+  <td height=25 colspan=6 style='height:18.75pt;mso-ignore:colspan'></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=25 style='mso-height-source:userset;height:18.75pt'>
+  <td height=25 class=xl67 colspan=5 style='height:18.75pt;mso-ignore:colspan'>Copyright
+  <font class="font12">©</font><font class="font11"> 2012 by ilia Sevostianov</font></td>
+  <td></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:19.5pt'>
+  <td height=26 colspan=6 style='height:19.5pt;mso-ignore:colspan'></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=22 style='mso-height-source:userset;height:16.5pt'>
+  <td colspan=2 rowspan=2 height=42 class=xl147 style='border-right:1.0pt solid #0070C0;
+  height:31.5pt'>name:</td>
+  <td colspan=3 rowspan=2 class=xl149 style='border-right:1.0pt solid #0070C0;
+  border-bottom:1.0pt solid #0070C0'>USM</td>
+  <td colspan=2 rowspan=2 class=xl155 style='border-right:1.0pt solid #0070C0'>source:</td>
+  <td colspan=6 rowspan=2 class=xl156 style='border-right:1.0pt solid #0070C0;
+  border-bottom:1.0pt solid #0070C0'>\lib\jsUniversalModule\USM.js</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl68 style='height:15.75pt'>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71><u style='visibility:hidden;mso-ignore:visibility'>&nbsp;</u></td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl72 colspan=3 style='height:20.25pt;mso-ignore:colspan'>DEPENDENCY</td>
+  <td colspan=7 style='mso-ignore:colspan'></td>
+  <td class=xl70></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl73 colspan=4 style='height:20.25pt;mso-ignore:colspan'>module
+  has no dependencies</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+  <td class=xl70></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=10 style='height:15.75pt;mso-ignore:colspan'></td>
+  <td class=xl70></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=31 style='height:23.25pt'>
+  <td height=31 class=xl68 style='height:23.25pt'>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl74 colspan=3 style='mso-ignore:colspan'><a
+  href="sheet002.htm#RANGE!A1"><span style='font-size:18.0pt;font-weight:700'>&#8362;<font
+  class="font20"> VIEW SOURCE CODE</font></span></a></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 class=xl72 colspan=2 style='height:20.25pt;mso-ignore:colspan'>CONTENT</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl75 style='height:15.75pt'><a href="#RANGE!A25">USM</a></td>
+  <td class=xl75></td>
+  <td class=xl77></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+  <td class=xl78 colspan=4 style='mso-ignore:colspan'>{Global Object}{Main
+  Object}</td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl75 colspan=2 style='height:15.75pt;mso-ignore:colspan'><a
+  href="#RANGE!A31">USM.MacrosBase</a></td>
+  <td class=xl77></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+  <td class=xl78>{Object}</td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl75 colspan=4 style='height:15.75pt;mso-ignore:colspan'><a
+  href="#RANGE!A44">USM.MacrosBase.MacrosParser()</a></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+  <td class=xl78 colspan=2 style='mso-ignore:colspan'>{Method}</td>
+  <td class=xl78></td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl75 colspan=2 style='height:15.75pt;mso-ignore:colspan'><a
+  href="#RANGE!A56">USM.PathValidation</a></td>
+  <td class=xl75></td>
+  <td class=xl75></td>
+  <td class=xl77></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl78 colspan=2 style='mso-ignore:colspan'>{Method}</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl79 style='height:15.75pt'></td>
+  <td class=xl79></td>
+  <td class=xl79></td>
+  <td class=xl79></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl69 style='height:15.75pt'><a href="#RANGE!A76">EXAMPLE</a></td>
+  <td class=xl70></td>
+  <td class=xl79></td>
+  <td class=xl79></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=15 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl68 style='height:15.75pt'>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 colspan=2 style='mso-ignore:colspan'><a href="#RANGE!A1"><span
+  style='font-size:12.0pt;font-weight:700'>CONTENT &#8593;</span></a></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl83 colspan=2 style='height:15.0pt;mso-ignore:colspan'><a
+  name="RANGE!A25">Explication:</a></td>
+  <td class=xl85 colspan=10 style='mso-ignore:colspan;border-right:.5pt solid black'>Модуль
+  реализован в виде глобального объекта, так чтобы к его методам можно
+  было<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl82 style='height:15.0pt'></td>
+  <td class=xl82></td>
+  <td class=xl88 colspan=9 style='mso-ignore:colspan'>обращаться по заранее
+  известной инструкции, при условии его подключения.</td>
+  <td class=xl90>&nbsp;</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr class=xl91 height=20 style='height:15.0pt'>
+  <td height=20 class=xl91 style='height:15.0pt'>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+  <td class=xl91>&nbsp;</td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl92 style='height:15.0pt'>USM</td>
+  <td class=xl93></td>
+  <td class=xl93></td>
+  <td></td>
+  <td class=xl78 colspan=3 style='mso-ignore:colspan'>{Global Object}{Main
+  Object}</td>
+  <td class=xl78></td>
+  <td colspan=7 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'></td>
+  <td class=xl95></td>
+  <td class=xl97></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl68 style='height:15.75pt'>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 colspan=2 style='mso-ignore:colspan'><a href="#RANGE!A1"><span
+  style='font-size:12.0pt;font-weight:700'>CONTENT &#8593;</span></a></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl83 colspan=2 style='height:15.0pt;mso-ignore:colspan'><a
+  name="RANGE!A31">Explication:</a></td>
+  <td class=xl85 colspan=9 style='mso-ignore:colspan'>Объект пул-функций для
+  формирования, и определения значений шаблонов</td>
+  <td class=xl98>&nbsp;</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl82 style='height:15.0pt'></td>
+  <td></td>
+  <td class=xl88 colspan=2 style='mso-ignore:colspan'>макровставок.</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl100>&nbsp;</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl82 style='height:15.0pt'></td>
+  <td></td>
+  <td class=xl97></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:19.5pt'>
+  <td height=26 class=xl101 colspan=3 style='height:19.5pt;mso-ignore:colspan'>USM.<font
+  class="font31">MacrosBase</font></td>
+  <td class=xl101></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td></td>
+  <td class=xl78>{Object}</td>
+  <td class=xl78></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl93 style='height:15.0pt'></td>
+  <td class=xl93></td>
+  <td class=xl93></td>
+  <td></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td colspan=7 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl102>{</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl96>DD<font class="font33">:</font></td>
+  <td class=xl94 colspan=4 style='mso-ignore:colspan'>{Object}{Function}<font
+  class="font34">[without arguments]</font></td>
+  <td class=xl103 colspan=6 style='mso-ignore:colspan;border-right:.5pt solid black'>*
+  Возвращает текущий день месяца в фрмате DD</td>
+  <td class=xl106>RUS</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl96>MM<font class="font33">:</font></td>
+  <td class=xl94 colspan=4 style='mso-ignore:colspan'>{Object}{Function}<font
+  class="font34">[without arguments]</font></td>
+  <td class=xl103 colspan=5 style='mso-ignore:colspan'>* Возвращает текущий
+  месяц в фрмате MM</td>
+  <td class=xl107>&nbsp;</td>
+  <td class=xl108>RUS</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl96>YY<font class="font33">:</font></td>
+  <td class=xl94 colspan=4 style='mso-ignore:colspan'>{Object}{Function}<font
+  class="font34">[without arguments]</font></td>
+  <td class=xl103 colspan=5 style='mso-ignore:colspan'>* Возвращает текущий год
+  в фрмате YY</td>
+  <td class=xl107>&nbsp;</td>
+  <td class=xl108>RUS</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl96>YYYY<font class="font33">:</font></td>
+  <td class=xl94 colspan=4 style='mso-ignore:colspan'>{Object}{Function}<font
+  class="font34">[without arguments]</font></td>
+  <td class=xl103 colspan=5 style='mso-ignore:colspan'>* Возвращает текущий год
+  в фрмате YYYY</td>
+  <td class=xl107>&nbsp;</td>
+  <td class=xl108>RUS</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl102>}</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'></td>
+  <td class=xl109></td>
+  <td class=xl97></td>
+  <td class=xl97></td>
+  <td class=xl97></td>
+  <td class=xl97></td>
+  <td class=xl97></td>
+  <td class=xl97></td>
+  <td class=xl97></td>
+  <td class=xl97></td>
+  <td class=xl97></td>
+  <td class=xl81></td>
+  <td class=xl110></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl68 style='height:15.75pt'>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 colspan=2 style='mso-ignore:colspan'><a href="#RANGE!A1"><span
+  style='font-size:12.0pt;font-weight:700'>CONTENT &#8593;</span></a></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl83 colspan=2 style='height:15.0pt;mso-ignore:colspan'><a
+  name="RANGE!A44">Explication:</a></td>
+  <td class=xl85 colspan=10 style='mso-ignore:colspan;border-right:.5pt solid black'>Этот
+  метод проверяет строку на предмет наличия в ней макровставок, и в случае</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl82 style='height:15.0pt'></td>
+  <td class=xl82></td>
+  <td class=xl88 colspan=6 style='mso-ignore:colspan'>обнаружения произволдит
+  соответсвующую замену.</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl90>&nbsp;</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl102></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:19.5pt'>
+  <td height=26 class=xl101 colspan=6 style='height:19.5pt;mso-ignore:colspan'>USM.<font
+  class="font31">MacrosBase</font><font class="font27">.</font><font
+  class="font31">MacrosParser</font><font class="font36">(</font><font
+  class="font27">MacroString</font><font class="font36">)</font></td>
+  <td class=xl92></td>
+  <td class=xl78 colspan=2 style='mso-ignore:colspan'>{Method}</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl101 style='height:15.0pt'></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl82 colspan=2 style='mso-ignore:colspan'>Arguments:</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>{String}</td>
+  <td class=xl111 colspan=2 style='mso-ignore:colspan'>MacroString</td>
+  <td class=xl113 colspan=5 style='mso-ignore:colspan'>* Строка проверяемая на
+  макровставки.</td>
+  <td class=xl115>&nbsp;</td>
+  <td class=xl115>&nbsp;</td>
+  <td class=xl115>&nbsp;</td>
+  <td class=xl116>&nbsp;</td>
+  <td class=xl106>RUS</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl112></td>
+  <td class=xl112></td>
+  <td class=xl112></td>
+  <td class=xl112></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl110></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl82 colspan=2 style='mso-ignore:colspan'>Return:</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>{String}</td>
+  <td class=xl103 colspan=8 style='mso-ignore:colspan'>* Искомая строка с
+  произведенной заменой найденый макровставок.</td>
+  <td class=xl115>&nbsp;</td>
+  <td class=xl115>&nbsp;</td>
+  <td class=xl116>&nbsp;</td>
+  <td class=xl106>RUS</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl112></td>
+  <td class=xl112></td>
+  <td class=xl112></td>
+  <td class=xl112></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl110></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl76 style='height:15.75pt'></td>
+  <td class=xl102></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl68 style='height:15.75pt'><a name="RANGE!A56">&nbsp;</a></td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 colspan=2 style='mso-ignore:colspan'><a href="#RANGE!A1"><span
+  style='font-size:12.0pt;font-weight:700'>CONTENT &#8593;</span></a></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl83 colspan=2 style='height:15.0pt;mso-ignore:colspan'>Explication:</td>
+  <td class=xl85 colspan=10 style='mso-ignore:colspan;border-right:.5pt solid black'>Этот
+  Метод<span style='mso-spacerun:yes'>  </span>предназначен для обработки
+  строкового значения указанного в качестве</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl82 style='height:15.0pt'></td>
+  <td class=xl82></td>
+  <td class=xl88 colspan=8 style='mso-ignore:colspan'>какого либо пути.
+  Формирование абсолютных путей из относительных.</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl90>&nbsp;</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl102></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+  <td height=24 class=xl101 colspan=5 style='height:18.0pt;mso-ignore:colspan'>USM<font
+  class="font27">.</font><font class="font31">PathValidation</font><font
+  class="font36">(</font><font class="font27">TargetPath</font><font
+  class="font36">)</font></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl78 colspan=2 style='mso-ignore:colspan'>{Method}</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl101 style='height:15.0pt'></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl92></td>
+  <td class=xl78></td>
+  <td class=xl78></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl82 colspan=2 style='mso-ignore:colspan'>Arguments:</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>{String}</td>
+  <td class=xl111 colspan=2 style='mso-ignore:colspan'>TargetPath</td>
+  <td class=xl113 colspan=9 style='mso-ignore:colspan;border-right:.5pt solid black'>*
+  Абсолютный или относительный путь к целевому файлу или каталогу.</td>
+  <td class=xl106>RUS</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl76 style='height:15.75pt'></td>
+  <td class=xl118 colspan=2 style='mso-ignore:colspan'>Внимание!!!</td>
+  <td class=xl119 colspan=9 style='mso-ignore:colspan;border-right:.5pt solid black'>Относительные
+  пути вверх по лесу (древу каталогов), данная функция</td>
+  <td class=xl106>RUS</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl76 style='height:15.75pt'></td>
+  <td class=xl118></td>
+  <td class=xl81></td>
+  <td class=xl122 colspan=9 style='mso-ignore:colspan;border-right:.5pt solid black'>разбирает
+  руководствуясь правлиом:<span style='mso-spacerun:yes'>  </span>Каждая
+  предстоящая точка кроме<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl110></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl76 style='height:15.75pt'></td>
+  <td class=xl118></td>
+  <td class=xl81></td>
+  <td class=xl122 colspan=6 style='mso-ignore:colspan'>последней рассмативается
+  как шаг вверх по лесу.<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl97></td>
+  <td class=xl97></td>
+  <td class=xl123>&nbsp;</td>
+  <td class=xl110></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl76 style='height:15.75pt'></td>
+  <td class=xl118></td>
+  <td class=xl81></td>
+  <td class=xl122 colspan=8 style='mso-ignore:colspan'>Что отличается от схемы
+  принятой в UNIX-подобных системах, где</td>
+  <td class=xl123>&nbsp;</td>
+  <td class=xl110></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl76 style='height:15.75pt'></td>
+  <td class=xl118></td>
+  <td class=xl81></td>
+  <td class=xl124 colspan=9 style='mso-ignore:colspan;border-right:.5pt solid black'>каждый
+  последующий шаг верх по лесу преставляется конструкцией &quot;<font
+  class="font26">/../</font><font class="font30">&quot;</font></td>
+  <td class=xl110></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl111></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl82 colspan=2 style='mso-ignore:colspan'>Return:</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>{String}</td>
+  <td class=xl119 colspan=11 style='mso-ignore:colspan;border-right:.5pt solid black'>*
+  Всегда абсолютный путь, полученный на основании полученного в качестве
+  аргумента<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl106>RUS</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'></td>
+  <td class=xl124 colspan=5 style='mso-ignore:colspan'>относительного или
+  абсолютного пути.</td>
+  <td class=xl125>&nbsp;</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl99>&nbsp;</td>
+  <td class=xl100>&nbsp;</td>
+  <td class=xl110></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl76 style='height:15.75pt'></td>
+  <td class=xl102></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl68 style='height:15.75pt'><a name="RANGE!A76">&nbsp;</a></td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 colspan=2 style='mso-ignore:colspan'><a href="#RANGE!A1"><span
+  style='font-size:12.0pt;font-weight:700'>CONTENT &#8593;</span></a></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td colspan=4 rowspan=2 height=41 class=xl162 style='border-bottom:1.0pt solid #0070C0;
+  height:30.75pt'>EXAMPLE</td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 class=xl81 style='height:15.75pt'></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td class=xl81></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl80 style='height:15.0pt'></td>
+  <td class=xl129 colspan=2 style='mso-ignore:colspan'>//<span
+  style='mso-spacerun:yes'>  </span>[ENG]</td>
+  <td class=xl130>&nbsp;</td>
+  <td class=xl130>&nbsp;</td>
+  <td class=xl130>&nbsp;</td>
+  <td class=xl130>&nbsp;</td>
+  <td class=xl130>&nbsp;</td>
+  <td class=xl130>&nbsp;</td>
+  <td class=xl130>&nbsp;</td>
+  <td class=xl130>&nbsp;</td>
+  <td class=xl130>&nbsp;</td>
+  <td class=xl131>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl80 style='height:15.0pt'></td>
+  <td class=xl132 colspan=7 style='mso-ignore:colspan'>//<span
+  style='mso-spacerun:yes'>  </span>Above this code should be defined
+  JScriptInclude Gear</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl133>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl132 colspan=10 style='mso-ignore:colspan'>//<span
+  style='mso-spacerun:yes'>  </span>The &quot;USM&quot; module must be defined
+  in config file of JScriptInclude Gear</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl133>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl132 colspan=2 style='mso-ignore:colspan'>//<span
+  style='mso-spacerun:yes'>  </span>[RUS]</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl133>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl132 colspan=9 style='mso-ignore:colspan'>// Перед этим кодом
+  должен быть обявлен механизм JScriptInclude Gear</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl133>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl132 colspan=10 style='mso-ignore:colspan'>// модуль
+  &quot;USM&quot;<span style='mso-spacerun:yes'>  </span>должен быть определен
+  в файле конфигурации JScriptInclude Gear</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl133>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl134>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl135>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl137 colspan=5 style='mso-ignore:colspan'>var<font class="font41">
+  somepath </font><font class="font42">=</font><font class="font41"> </font><font
+  class="font43">&quot;....\\Target.file&quot;</font></td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl135>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl138 colspan=6 style='mso-ignore:colspan'>WScript.<font
+  class="font44">Echo</font><font class="font0">(USM.</font><font class="font45">PathValidation</font><font
+  class="font46">(</font><font class="font47">somepath</font><font
+  class="font46">))</font><font class="font42">;</font></td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl135>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl132 colspan=8 style='mso-ignore:colspan'>//Для вызывающего
+  скрипта который расположеного в C:\1\2\3\4\</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl133>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl132 colspan=4 style='mso-ignore:colspan'>//вернет
+  C:\1\Target.file</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl133>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl138>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl135>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl137 colspan=5 style='mso-ignore:colspan'>var<font class="font41">
+  somepath </font><font class="font42">=</font><font class="font41"> </font><font
+  class="font43">&quot;sometext_YYYY_MM_DD&quot;</font></td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl135>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl138 colspan=7 style='mso-ignore:colspan'>WScript.<font
+  class="font44">Echo</font><font class="font0">(USM.</font><font class="font45">MacrosBase.MacrosParser</font><font
+  class="font46">(</font><font class="font47">somepath</font><font
+  class="font46">))</font><font class="font42">;</font></td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl135>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl138>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl132 colspan=3 style='mso-ignore:colspan'>//Вызванный 24.07.2012</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl133>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl132 colspan=4 style='mso-ignore:colspan'>//вернет
+  &quot;sometext_2012_07_24&quot;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl128>&nbsp;</td>
+  <td class=xl127>&nbsp;</td>
+  <td class=xl133>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl139>&nbsp;</td>
+  <td class=xl140>&nbsp;</td>
+  <td class=xl140>&nbsp;</td>
+  <td class=xl140>&nbsp;</td>
+  <td class=xl140>&nbsp;</td>
+  <td class=xl141>&nbsp;</td>
+  <td class=xl141>&nbsp;</td>
+  <td class=xl141>&nbsp;</td>
+  <td class=xl141>&nbsp;</td>
+  <td class=xl141>&nbsp;</td>
+  <td class=xl141>&nbsp;</td>
+  <td class=xl142>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=69 style='width:52pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=66 style='width:50pt'></td>
+  <td width=79 style='width:59pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
