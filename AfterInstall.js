@@ -44,6 +44,7 @@ WScript.Echo(
 + InstallationPath + "Help.html");
 
 this.WshShell.Run(InstallationPath + "Help.html",  0, false)
+WScript.Sleep(6000)
 
 WScript.Echo(
   "[ENG]\nAnd also run example of using:\n\n[RUS]\n" 
