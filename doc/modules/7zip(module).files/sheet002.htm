@@ -1,0 +1,914 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 12">
+<link id=Main-File rel=Main-File href="../7zip(module).htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:" ";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(1);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../7zip(module).htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link=blue vlink=purple>
+
+<table border=0 cellpadding=0 cellspacing=0 width=2048 style='border-collapse:
+ collapse;table-layout:fixed;width:1536pt'>
+ <col width=64 style='width:48pt'>
+ <col width=64 span=31 style='width:48pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=4 width=256 style='height:15.0pt;mso-ignore:colspan;
+  width:192pt'><a name="RANGE!A1">jsImport.<font class="font52">include</font><font
+  class="font50">(</font><font class="font53">&quot;USM.js&quot;</font><font
+  class="font50">)</font></a></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=32 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=4 style='height:15.0pt;mso-ignore:colspan'>function<font
+  class="font47"> jlib7zaArchivator</font><font class="font50">(){</font></td>
+  <td class=xl174></td>
+  <td colspan=3 class=xl135 style='mso-ignore:colspan'></td>
+  <td colspan=24 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=8 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font54">this</font><font
+  class="font47">.</font><font class="font52">WshShell</font><font
+  class="font47"> </font><font class="font48">=</font><font class="font47"> </font><font
+  class="font49">new</font><font class="font47"> ActiveXObject</font><font
+  class="font50">(</font><font class="font53">&quot;WScript.Shell&quot;</font><font
+  class="font50">)</font><font class="font48">;</font></td>
+  <td colspan=24 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=6 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font54">this</font><font
+  class="font47">.</font><font class="font52">setDisplayModeChoice </font><font
+  class="font47">=</font><font class="font48"> </font><font class="font47">1</font><font
+  class="font55">;</font><font class="font48"> </font><font class="font47"><span
+  style='mso-spacerun:yes'> </span></font></td>
+  <td colspan=2 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=24 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font54">this</font><font
+  class="font47">.</font><font class="font52">List</font><font class="font47"> </font><font
+  class="font48">=</font><font class="font47"> </font><font class="font50">[]</font><font
+  class="font48">;</font><font class="font47"><span
+  style='mso-spacerun:yes'> </span></font></td>
+  <td colspan=2 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=5 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font54">this</font><font
+  class="font47">.</font><font class="font52">path7za</font><font class="font47">
+  </font><font class="font48">=</font><font class="font47"> </font><font
+  class="font50">(</font><font class="font49">function</font><font
+  class="font50">(){</font></td>
+  <td colspan=27 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=6 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font54">this</font><font
+  class="font47">.</font><font class="font52">setDisplayModeChoice</font><font
+  class="font47"> </font><font class="font48">=</font><font class="font47"> </font><font
+  class="font55">1</font><font class="font48">;</font></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=17 class=xl175 style='mso-ignore:colspan'></td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=6 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font49">var</font><font
+  class="font47"> byDefault </font><font class="font48">=</font><font
+  class="font47"> </font><font class="font53">&quot;7za.exe&quot;</font><font
+  class="font48">,</font><font class="font47"> path</font><font class="font48">;</font></td>
+  <td colspan=14 class=xl175 style='mso-ignore:colspan'></td>
+  <td colspan=12 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=10 class=xl175 style='mso-ignore:colspan'></td>
+  <td colspan=20 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=8 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font54">for</font><font
+  class="font50">(</font><font class="font47">module </font><font class="font54">in</font><font
+  class="font47"><span style='mso-spacerun:yes'>  </span>jsImport.</font><font
+  class="font52">modulesByDefault</font><font class="font50">){</font></td>
+  <td colspan=7 class=xl175 style='mso-ignore:colspan'></td>
+  <td colspan=17 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=5 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">if</font><font class="font47"> </font><font class="font50">(</font><font
+  class="font47">module </font><font class="font48">==</font><font
+  class="font47"> </font><font class="font53">&quot;7zip&quot;</font><font
+  class="font50">){</font></td>
+  <td colspan=27 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=9 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                        </span>path <font
+  class="font48">=</font><font class="font47"> jsImport.</font><font
+  class="font52">modulesByDefault</font><font class="font50">[</font><font
+  class="font47">module</font><font class="font50">]</font><font class="font47">.</font><font
+  class="font52">path</font><font class="font48">;</font></td>
+  <td colspan=23 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=3 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                        </span><font
+  class="font54">break</font><font class="font48">;</font></td>
+  <td colspan=29 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font50">}</font><font class="font48">;</font></td>
+  <td colspan=5 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td colspan=14 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=16 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=3 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=27 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=18 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font54">if</font><font
+  class="font50">(</font><font class="font54">typeof</font><font class="font47">
+  path </font><font class="font48">!=</font><font class="font47"> </font><font
+  class="font53">&quot;undefined&quot;</font><font class="font50">){</font><font
+  class="font47">path </font><font class="font48">=</font><font class="font47">
+  path.</font><font class="font52">substring</font><font class="font50">(</font><font
+  class="font55">0</font><font class="font48">,</font><font class="font47">path.</font><font
+  class="font52">lastIndexOf</font><font class="font50">(</font><font
+  class="font53">&quot;&quot;</font><font class="font50">)</font><font
+  class="font48">+</font><font class="font55">1</font><font class="font50">)</font><font
+  class="font47"> </font><font class="font48">+</font><font class="font47"> </font><font
+  class="font53">&quot;7za.exe&quot;</font><font class="font50">}</font><font
+  class="font54">else</font><font class="font50">{</font><font class="font47">path
+  </font><font class="font48">=</font><font class="font47"> </font><font
+  class="font53">&quot;7za.exe&quot;</font><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td colspan=14 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=7 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=23 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=3 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font54">return</font><font
+  class="font47"> path</font><font class="font48">;</font></td>
+  <td colspan=3 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=4 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span>})<font class="font50">(); </font><font
+  class="font48"><span style='mso-spacerun:yes'> </span></font><font
+  class="font47"><span style='mso-spacerun:yes'> </span></font></td>
+  <td colspan=7 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=23 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>}<font class="font48">;</font></td>
+  <td></td>
+  <td colspan=4 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=5 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=3 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>      </span><font class="font56"><span
+  style='mso-spacerun:yes'> </span>( </font><font class="font49">function</font><font
+  class="font57">()</font><font class="font49">{ </font><font class="font50"><span
+  style='mso-spacerun:yes'>   </span></font><font class="font47"><span
+  style='mso-spacerun:yes'> </span></font></td>
+  <td colspan=6 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=23 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=9 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span>jlib7zaArchivator.<font
+  class="font52">prototype</font><font class="font47">.</font><font
+  class="font52">setDisplayMode</font><font class="font47"> </font><font
+  class="font48">=</font><font class="font47"> </font><font class="font49">function</font><font
+  class="font50">(</font><font class="font47">mode</font><font class="font50">){</font></td>
+  <td colspan=23 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=15 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font54">if</font><font
+  class="font50">(</font><font class="font54">typeof</font><font class="font47">
+  mode </font><font class="font48">!=</font><font class="font47"> </font><font
+  class="font53">&quot;undefined&quot;</font><font class="font50">){</font><font
+  class="font47">mode </font><font class="font48">=</font><font class="font47">
+  mode.</font><font class="font52">toLowerCase</font><font class="font50">()}</font><font
+  class="font54">else</font><font class="font50">{var mode </font><font
+  class="font49">= &quot;</font><font class="font47">visibl</font><font
+  class="font48">e</font><font class="font47">&quot;</font><font class="font53">};<span
+  style='mso-spacerun:yes'>       </span></font><font class="font50"><span
+  style='mso-spacerun:yes'> </span></font><font class="font48"><span
+  style='mso-spacerun:yes'> </span></font><font class="font47"><span
+  style='mso-spacerun:yes'>   </span></font></td>
+  <td colspan=17 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font54">switch</font><font
+  class="font47"> </font><font class="font50">(</font><font class="font47">mode</font><font
+  class="font50">)</font><font class="font47"> </font><font class="font50">{</font></td>
+  <td colspan=5 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=23 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">case</font><font class="font47"> </font><font class="font53">&quot;visible&quot;</font><font
+  class="font48">:</font></td>
+  <td colspan=2 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=7 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                        </span><font
+  class="font54">this</font><font class="font47">.</font><font class="font52">setDisplayModeChoice</font><font
+  class="font47"> </font><font class="font48">=</font><font class="font47"> </font><font
+  class="font55">1</font><font class="font48">;</font></td>
+  <td colspan=25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=3 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                        </span><font
+  class="font54">break</font><font class="font48">;</font></td>
+  <td colspan=4 class=xl76 style='mso-ignore:colspan'></td>
+  <td colspan=25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">case</font><font class="font47"> </font><font class="font53">&quot;hidden&quot;</font><font
+  class="font48">:</font></td>
+  <td colspan=5 class=xl76 style='mso-ignore:colspan'></td>
+  <td colspan=23 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=7 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                        </span><font
+  class="font54">this</font><font class="font47">.</font><font class="font52">setDisplayModeChoice</font><font
+  class="font47"> </font><font class="font48">=</font><font class="font47"> </font><font
+  class="font55">0</font><font class="font48">;</font></td>
+  <td colspan=25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=3 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                        </span><font
+  class="font54">break</font><font class="font48">;</font></td>
+  <td colspan=6 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=23 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">case</font><font class="font47"> </font><font class="font53">&quot;minimazed&quot;</font><font
+  class="font48">:</font></td>
+  <td colspan=2 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=7 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                        </span><font
+  class="font54">this</font><font class="font47">.</font><font class="font52">setDisplayModeChoice</font><font
+  class="font47"> </font><font class="font48">=</font><font class="font47"> </font><font
+  class="font55">2</font><font class="font48">;</font></td>
+  <td colspan=25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=3 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                        </span><font
+  class="font54">break</font><font class="font48">;</font></td>
+  <td colspan=29 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">case</font><font class="font47"> </font><font class="font53">&quot;maximazed&quot;</font><font
+  class="font48">:</font></td>
+  <td colspan=2 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=7 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                        </span><font
+  class="font54">this</font><font class="font47">.</font><font class="font52">setDisplayModeChoice</font><font
+  class="font47"> </font><font class="font48">=</font><font class="font47"> </font><font
+  class="font55">3</font><font class="font48">;</font></td>
+  <td colspan=25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=3 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                        </span><font
+  class="font54">break</font><font class="font48">;</font></td>
+  <td colspan=3 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td class=xl77></td>
+  <td class=xl76></td>
+  <td colspan=28 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td colspan=30 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td class=xl175></td>
+  <td colspan=29 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=8 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span>jlib7zaArchivator.<font
+  class="font52">prototype</font><font class="font47">.</font><font
+  class="font52">toList</font><font class="font47"> </font><font class="font48">=</font><font
+  class="font47"> </font><font class="font49">function</font><font
+  class="font50">(</font><font class="font47">newFile</font><font class="font50">){</font></td>
+  <td class=xl175></td>
+  <td colspan=23 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=2 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font54">try</font><font
+  class="font50">{</font></td>
+  <td colspan=10 class=xl175 style='mso-ignore:colspan'></td>
+  <td colspan=20 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=8 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font49">var</font><font class="font47"> toPush </font><font
+  class="font48">=</font><font class="font47"> USM.</font><font class="font52">PathValidation</font><font
+  class="font50">(</font><font class="font47">newFile</font><font class="font50">)</font></td>
+  <td colspan=4 class=xl175 style='mso-ignore:colspan'></td>
+  <td colspan=20 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=5 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">this</font><font class="font47">.</font><font class="font52">List</font><font
+  class="font47">.</font><font class="font52">push</font><font class="font50">(</font><font
+  class="font47">toPush</font><font class="font50">)</font><font class="font48">;</font></td>
+  <td colspan=8 class=xl175 style='mso-ignore:colspan'></td>
+  <td colspan=19 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=6 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span>return
+  -1<span style='mso-spacerun:yes'>                  </span><font class="font54"><span
+  style='mso-spacerun:yes'>      </span></font><font class="font47"><span
+  style='mso-spacerun:yes'> </span></font><font class="font48"><span
+  style='mso-spacerun:yes'> </span></font><font class="font55"><span
+  style='mso-spacerun:yes'> </span></font><font class="font47"><span
+  style='mso-spacerun:yes'>    </span></font></td>
+  <td colspan=6 class=xl175 style='mso-ignore:colspan'></td>
+  <td colspan=20 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=3 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font50">}</font><font
+  class="font54">catch</font><font class="font50">(</font><font class="font47">err</font><font
+  class="font50">){</font></td>
+  <td colspan=3 class=xl175 style='mso-ignore:colspan'></td>
+  <td class=xl76></td>
+  <td colspan=25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=3 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">return</font><font class="font47"> </font><font class="font55">0</font></td>
+  <td colspan=29 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td colspan=30 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td colspan=30 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=8 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=22 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=8 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span>jlib7zaArchivator.<font
+  class="font52">prototype</font><font class="font47">.</font><font
+  class="font52">clearList</font><font class="font47"> </font><font
+  class="font48">=</font><font class="font47"> </font><font class="font49">function</font><font
+  class="font50">(){</font></td>
+  <td colspan=4 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=20 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">this</font><font class="font47">.</font><font class="font52">List</font><font
+  class="font47"> </font><font class="font48">=</font><font class="font47"> </font><font
+  class="font49">null</font><font class="font48">;</font></td>
+  <td colspan=12 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=16 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=5 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">this</font><font class="font47">.</font><font class="font52">List</font><font
+  class="font47"> </font><font class="font48">=</font><font class="font49">new</font><font
+  class="font47"> Array</font><font class="font50">()</font><font class="font48">;</font></td>
+  <td class=xl176></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td colspan=2 class=xl77 style='mso-ignore:colspan'></td>
+  <td class=xl76></td>
+  <td colspan=27 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=11 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=19 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=12 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span>jlib7zaArchivator.<font
+  class="font52">prototype</font><font class="font47">.</font><font
+  class="font52">SingleShell7za</font><font class="font47"> </font><font
+  class="font48">=</font><font class="font47"> </font><font class="font49">function</font><font
+  class="font50">(</font><font class="font47">TargetFile</font><font
+  class="font48">,</font><font class="font47"> MacroString</font><font
+  class="font50">){</font></td>
+  <td colspan=20 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=11 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font49">var</font><font
+  class="font47"> TargetArchName </font><font class="font48">=</font><font
+  class="font47"> USM.</font><font class="font52">MacrosBase</font><font
+  class="font47">.</font><font class="font52">MacrosParser</font><font
+  class="font50">(</font><font class="font47">MacroString</font><font
+  class="font50">)</font><font class="font47"> </font><font class="font48">+</font><font
+  class="font47"> </font><font class="font53">&quot;.zip &quot;</font><font
+  class="font48">;</font></td>
+  <td colspan=17 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=16 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font49">var</font><font
+  class="font47"> ShellComand </font><font class="font48">=</font><font
+  class="font47"> USM.</font><font class="font52">PathValidation</font><font
+  class="font50">(</font><font class="font54">this</font><font class="font47">.</font><font
+  class="font52">path7za</font><font class="font50">)</font><font class="font47">
+  </font><font class="font48">+</font><font class="font47"> </font><font
+  class="font53">&quot; a -tzip &quot;</font><font class="font47"> </font><font
+  class="font48">+</font><font class="font47"> TargetArchName </font><font
+  class="font48">+</font><font class="font47"> TargetFile </font><font
+  class="font48">+</font><font class="font47"> </font><font class="font53">&quot;
+  -mx=7&quot;</font><font class="font48">;</font></td>
+  <td colspan=16 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=2 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font54">try</font><font
+  class="font50">{</font></td>
+  <td colspan=4 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=11 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">this</font><font class="font47">.</font><font class="font52">WshShell</font><font
+  class="font47">.</font><font class="font52">Run</font><font class="font50">(</font><font
+  class="font47">ShellComand</font><font class="font48">,</font><font
+  class="font47"><span style='mso-spacerun:yes'>  </span></font><font
+  class="font54">this</font><font class="font47">.</font><font class="font52">setDisplayModeChoice</font><font
+  class="font48">,</font><font class="font47"> </font><font class="font49">true</font><font
+  class="font50">)</font><font class="font48">;</font></td>
+  <td colspan=21 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font50">}</font><font
+  class="font54">catch</font><font class="font50">(</font><font class="font47">theError</font><font
+  class="font50">){</font></td>
+  <td colspan=28 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=28 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span>WScript.<font
+  class="font52">Echo</font><font class="font50">(</font><font class="font53">'Error
+  from ActiveXObject(&quot;WScript.Shell&quot;)nShellComand: '</font><font
+  class="font47"><span style='mso-spacerun:yes'>  </span></font><font
+  class="font48">+</font><font class="font47"> ShellComand </font><font
+  class="font48">+</font><font class="font47"> USM.</font><font class="font52">getErrorToString</font><font
+  class="font50">(</font><font class="font47">theError</font><font
+  class="font50">)</font><font class="font47"> </font><font class="font48">+</font><font
+  class="font47"> </font><font class="font53">'n'</font><font class="font47"> </font><font
+  class="font48">+</font><font class="font47"> TargetFile </font><font
+  class="font48">+</font><font class="font47"> </font><font class="font53">&quot;
+  can not be successfully added to archive&quot;</font><font class="font50">)</font></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td colspan=30 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span>ShellComand <font
+  class="font48">=</font><font class="font47"> </font><font class="font49">null</font><font
+  class="font48">;</font></td>
+  <td colspan=5 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=23 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=5 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font54">return</font><font
+  class="font47"> TargetArchName</font><font class="font48">;</font></td>
+  <td colspan=27 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td colspan=6 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=24 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=13 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=17 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=11 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span>jlib7zaArchivator.<font
+  class="font52">prototype</font><font class="font47">.</font><font
+  class="font52">Archivate</font><font class="font47"> </font><font
+  class="font48">=</font><font class="font47"> </font><font class="font49">function</font><font
+  class="font50">(</font><font class="font47">TargetFile</font><font
+  class="font48">,</font><font class="font47"> MacroString</font><font
+  class="font50">){</font></td>
+  <td colspan=21 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span>var <font class="font49"><span
+  style='mso-spacerun:yes'>   </span></font><font class="font47"><span
+  style='mso-spacerun:yes'> </span>TargetArchName</font><font class="font48">;</font></td>
+  <td colspan=19 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=9 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=5 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font54">if</font><font
+  class="font50">(</font><font class="font47">TargetFile </font><font
+  class="font48">!=</font><font class="font47"> </font><font class="font53">'list'</font><font
+  class="font50">){</font></td>
+  <td colspan=10 class=xl77 style='mso-ignore:colspan'></td>
+  <td colspan=17 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=17 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">return</font><font class="font47"> </font><font class="font54">this</font><font
+  class="font47">.</font><font class="font52">SingleShell7za</font><font
+  class="font50">(</font><font class="font47">USM.</font><font class="font52">PathValidation(TargetFile),
+  MacroString); </font><font class="font50"><span
+  style='mso-spacerun:yes'> </span></font><font class="font47"><span
+  style='mso-spacerun:yes'>          </span></font><font class="font50"><span
+  style='mso-spacerun:yes'> </span></font><font class="font48"><span
+  style='mso-spacerun:yes'> </span></font><font class="font47"><span
+  style='mso-spacerun:yes'>            </span></font><font class="font50"><span
+  style='mso-spacerun:yes'> </span></font><font class="font48"><span
+  style='mso-spacerun:yes'> </span></font><font class="font47"><span
+  style='mso-spacerun:yes'>    </span></font></td>
+  <td colspan=15 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=4 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span>}else{<span
+  style='mso-spacerun:yes'>                </span><font class="font50"><span
+  style='mso-spacerun:yes'> </span></font><font class="font54"><span
+  style='mso-spacerun:yes'>    </span></font><font class="font50"><span
+  style='mso-spacerun:yes'> </span></font><font class="font47"><span
+  style='mso-spacerun:yes'>    </span></font></td>
+  <td colspan=2 class=xl76 style='mso-ignore:colspan'></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=32 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">if</font><font class="font50">(</font><font class="font54">this</font><font
+  class="font47">.</font><font class="font52">List</font><font class="font47">.</font><font
+  class="font52">length</font><font class="font47"> </font><font class="font48">&gt;</font><font
+  class="font47"> </font><font class="font55">0</font><font class="font50">){</font><font
+  class="font47">TargetFile </font><font class="font48">=</font><font
+  class="font47"> </font><font class="font54">this</font><font class="font47">.</font><font
+  class="font52">List</font><font class="font50">}</font><font class="font54">else</font><font
+  class="font50">{</font><font class="font47">WScript.</font><font
+  class="font52">Echo</font><font class="font50">(</font><font class="font53">'error(jlib7zipArchivator):The
+  list is emptynUse the &quot;jlib7zipArchivator.toList&quot; method, or
+  complete property &quot;jlib7zipArchivator.List&quot; manually'</font><font
+  class="font50">)}</font><font class="font48">;</font></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=22 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font54">for</font><font class="font50">(</font><font class="font49">var</font><font
+  class="font47"> OneOfTargerts</font><font class="font48">=</font><font
+  class="font55">0</font><font class="font48">;</font><font class="font47">
+  OneOfTargerts </font><font class="font48">&lt;</font><font class="font47">
+  TargetFile.length; OneOfTargerts++){<span
+  style='mso-spacerun:yes'>                                 </span></font><font
+  class="font52"><span style='mso-spacerun:yes'>      </span></font><font
+  class="font48"><span style='mso-spacerun:yes'> </span></font><font
+  class="font47"><span style='mso-spacerun:yes'>              </span></font><font
+  class="font48"><span style='mso-spacerun:yes'>  </span></font><font
+  class="font50"><span style='mso-spacerun:yes'>  </span></font><font
+  class="font47"><span style='mso-spacerun:yes'>         </span></font></td>
+  <td colspan=10 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=13 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                       
+  </span>TargetArchName <font class="font48">=</font><font class="font47"> </font><font
+  class="font54">this</font><font class="font47">.</font><font class="font52">SingleShell7za</font><font
+  class="font50">(</font><font class="font47">TargetFile</font><font
+  class="font50">[</font><font class="font47">OneOfTargerts</font><font
+  class="font50">]</font><font class="font48">,</font><font class="font47">
+  MacroString</font><font class="font50">)</font><font class="font48">;</font></td>
+  <td colspan=19 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                                </span><font
+  class="font50">}</font><font class="font48">;</font></td>
+  <td class=xl76></td>
+  <td colspan=29 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td colspan=30 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=5 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                        </span><font class="font54">return</font><font
+  class="font47"> TargetArchName</font><font class="font48">;</font></td>
+  <td class=xl77></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td height=21 colspan=6 style='height:15.75pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                       
+  </span>this.clearList();<span style='mso-spacerun:yes'>   </span><font
+  class="font54"><span style='mso-spacerun:yes'>    </span></font><font
+  class="font47"><span style='mso-spacerun:yes'> </span></font><font
+  class="font52"><span style='mso-spacerun:yes'>         </span></font><font
+  class="font50"><span style='mso-spacerun:yes'>  </span></font><font
+  class="font48"><span style='mso-spacerun:yes'> </span></font><font
+  class="font47"><span style='mso-spacerun:yes'>   </span></font></td>
+  <td colspan=26 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>                </span><font class="font50">}</font><font
+  class="font48">;</font></td>
+  <td colspan=30 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=9 class=xl76 style='mso-ignore:colspan'></td>
+  <td colspan=21 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'><span
+  style='mso-spacerun:yes'>        </span><font class="font50">})()</font><font
+  class="font48">;</font></td>
+  <td colspan=30 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=32 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=32 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=2 class=xl76 style='mso-ignore:colspan'></td>
+  <td colspan=28 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=32 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=8 class=xl76 style='mso-ignore:colspan'></td>
+  <td colspan=22 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=32 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=32 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=2 class=xl76 style='mso-ignore:colspan'></td>
+  <td colspan=28 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=32 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=8 class=xl76 style='mso-ignore:colspan'></td>
+  <td colspan=22 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=32 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td colspan=31 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=4 class=xl76 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=28 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl80 style='height:15.0pt'></td>
+  <td colspan=31 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=10 class=xl76 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td colspan=22 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl80 style='height:15.0pt'></td>
+  <td colspan=31 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl76 style='height:15.0pt'></td>
+  <td colspan=31 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl80 style='height:15.0pt'></td>
+  <td colspan=31 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
