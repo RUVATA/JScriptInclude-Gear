@@ -21,8 +21,10 @@ jsImport.getConfig = function(ConfFile){
 }
 
 jsImport.initialization = function(){
+ var temp = jsImport.requiredSource;
+ jsImport.requiredSource = null;
  if(jsImport.WriteCache == true){jsImport.Cache.Close()};
- return jsImport.requiredSource;
+ return temp;
 };
 
 
@@ -107,4 +109,4 @@ jsImport.require = function (TargetScript, ParentDir){
 	};
 };
 };
-jsImport.getConfig("$INSTALL_DIR$jsModulesConfig.js")
+jsImport.getConfig("B:\\JScriptInclude\\JS\\jsModulesConfig.js")
